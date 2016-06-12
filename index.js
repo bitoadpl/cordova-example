@@ -1,3 +1,6 @@
+
+document.getElementById('msg').innerHTML = 'ok';
+
 console.log('index.js init');
 
 var zeroconf = cordova.plugins.zeroconf;
