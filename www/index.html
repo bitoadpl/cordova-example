@@ -19,6 +19,12 @@
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript">
             console.log("html started")
+            var zeroconf = cordova.plugins.zeroconf;
+
+            zeroconf.register('_http._tcp.local.', 'Android Phone', 80, {
+                'foo' : 'bar'
+            });
+            
         </script>
     </body>
 </html>
