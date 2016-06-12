@@ -16,17 +16,9 @@
     <platform name="android">
         <preference name="android-minSdkVersion" value="19" />
         <preference name="android-build-tool" value="gradle" />
-        <config-file platform="android" parent="/manifest" >
-            <uses-permission android:name="android.permission.CAMERA" />
-            <uses-permission android:name="android.permission.RECORD_AUDIO" />
-            <uses-permission android:name="android.permission.RECORD_VIDEO"/>
-            <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
-            <uses-permission android:name="android.permission.INTERNET" />
-            <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-            <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
-            <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-            <uses-permission android:name="android.permission.INTERNET" />
-        <config-file>
+        <config-file target="AndroidManifest.xml" parent="/manifest">
+            <uses-permission android:name="android.permission.INTERNET"/>
+        </config-file>
     </platform>
     
 
