@@ -15,6 +15,7 @@
     <allow-intent href="https://*/*" />
     <platform name="android">
         <allow-intent href="market:*" />
+        <preference name="android-minSdkVersion" value="14" />
     </platform>
     <platform name="ios">
         <allow-intent href="itms:*" />
