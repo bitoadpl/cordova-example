@@ -15,6 +15,9 @@
         <preference name="android-minSdkVersion" value="19" />
         <preference name="android-targetSdkVersion" value="19" />
     </platform>
+    <config-file platform="android" parent="/manifest">
+        <uses-sdk tools:overrideLibrary="org.apache.cordova,com.library.plugin" />
+    </config-file>
     <platform name="ios">
     </platform>
 </widget>
